@@ -24,9 +24,9 @@ To begin integration with the Verve payment android SDK, you have to register yo
 	
 3.	Click on Submit button. Once you have done this, you will see a page displaying your credentials.
 
-4.	Click on 'Manage' button at the top right conner. On this page under 'Details' section you will see your client id 		and your secret key. This will be needed in the SDK. On the 'Services' section turn on the 'QuickTeller Wallet 			Services' and 'QuickTeller Service' for your application. Note: without turning on this two services your 				application will throw access denied error.  
+4.	Click on 'Manage' button at the top right conner. On this page under 'Details' section you will see your client id and your secret key. This will be needed in the SDK. On the 'Services' section turn on the 'QuickTeller Wallet Services' and 'QuickTeller Service' for your application. Note: without turning on this two services your application will throw access denied error.  
 
-5	Now all is set for you to start building your app.
+5.	Now all is set for you to start building your app.
 
 
 
