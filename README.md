@@ -33,21 +33,14 @@ To begin integration with the Verve payment android SDK, you have to register yo
 Using the SDK in your project
 -----------------------------
 
-1. 	Dependencies: The dependencies are located in "libs" folder.
-	Using Android Studio, add the following to build.gradle file:
-	
-        compile 'com.google.code.gson:gson:2.2.4'
-        compile 'com.madgag:sc-light-jdk15on:1.47.0.3'
-        compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
-        compile 'org.springframework.android:spring-android-auth:1.0.1.RELEASE'
-        compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
+1. 	Add the dependencies located in "libs" folder to your project along with the Verve SDK library (See sample BlueCups project included).
 	
 2. 	Add the following lines of codes to your AndroidManifest.xml file to request for network access: 
 
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-   	These lines request for permission to access the internet access and network state of the phone respectively
+   	These lines request for permission to access the internet and network state of the phone respectively
    	Add the following lines of code to your AndroidManifest.xml file to register the activities used by the SDK
 
 3. 	Add the following lines of code to your AndroidManifest.xml file to register the activities used by the SDK
