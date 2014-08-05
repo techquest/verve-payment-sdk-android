@@ -33,17 +33,17 @@ To begin integration with the Verve payment android SDK, you have to register yo
 Using the SDK in your project
 -----------------------------
 
-1. 	Add the dependencies located in "libs" folder to your project along with the Verve SDK library (See sample BlueCups project included).
+1. 	Add the dependencies located in the "libs" folder to your project along with the Verve SDK library (See sample BlueCups project included).
 	
 2. 	Add the following lines of codes to your AndroidManifest.xml file to request for network access: 
 
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-   	These lines request for permission to access the internet and network state of the phone respectively
-   	Add the following lines of code to your AndroidManifest.xml file to register the activities used by the SDK
+   	These lines request for permission to access the internet and network state of the phone respectively.   	
+	
+3. 	Add the following lines of code to your AndroidManifest.xml file to register the activities used by the SDK:
 
-3. 	Add the following lines of code to your AndroidManifest.xml file to register the activities used by the SDK
         <activity
             android:name="com.interswitchng.techquest.vervepayment.VervePayment"
             android:label="" >
@@ -101,7 +101,7 @@ Using the SDK in your project
 	+ string clientSecret – This refers to the secret key you got from Developer Console for the particular application that you are developing.
 	+ bool isTestPayment – This is an optional parameter that is set when switching from test implementation to production environment. It is true by default which means that you are running in the test implementation. NOTE: it’s very important to set the value to false in a live distribution.
 
-6. 	Call startActivityForResult method passing the intent as a parameter and a resultCode to detect when the intent 		returns after execution.
+6. 	Call startActivityForResult method passing the intent as a parameter and a resultCode to detect when the intent	returns after execution.
    	For example:
    		startActivityForResult(intent, 400);
 						
