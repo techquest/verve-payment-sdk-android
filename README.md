@@ -1,9 +1,9 @@
-Using Verve Payment Android SDK
+Using Verve Payment SDK for Android
 ================================================================
 
 Verve payment android SDK lets you easily add payment capability into your Android application. The steps below describe how you can go about integrating the SDK into your application.
 
-Registering you application on the Developer Console
+Registering your application on the Developer Console
 ----------------------------------------------------
 
 To begin integration with the Verve payment android SDK, you have to register your application on the Developer Console.To do this, follow the steps below:
@@ -33,10 +33,9 @@ To begin integration with the Verve payment android SDK, you have to register yo
 Using the SDK in your project
 -----------------------------
 
-1. 	Dependencies:
-	You can specify the dependencies as shown below or simply follow the link to download the jar file
+1. 	Dependencies: The dependencies are located in "libs" folder.
 	Using Android Studio, add the following to build.gradle file:
-
+	
         compile 'com.google.code.gson:gson:2.2.4'
         compile 'com.madgag:sc-light-jdk15on:1.47.0.3'
         compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
@@ -47,7 +46,6 @@ Using the SDK in your project
 
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
 
    	These lines request for permission to access the internet access and network state of the phone respectively
    	Add the following lines of code to your AndroidManifest.xml file to register the activities used by the SDK
