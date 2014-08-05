@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BlueCup-Rest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Quickteller SDK</string>
+    <string name="title">Quickteller SDK Test</string>
+    <string name="paycode">Payment Code</string>
+    <string name="cid">Customer ID</string>
+    <string name="amount">Amount</string>
+    <string name="livetxn">Live Transaction</string>
+    <string name="paynew">Pay as a new user</string>
+    <string name="payold">Pay as an existing user</string>
+
+</resources>
