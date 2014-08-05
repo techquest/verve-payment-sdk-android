@@ -40,10 +40,10 @@ Using the SDK in your project
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-   	These lines request for permission to access the internet and network state of the phone respectively.   	
+	These lines request for permission to access the internet and network state of the phone respectively. 	
 	
 3. 	Add the following lines of code to your AndroidManifest.xml file to register the activities used by the SDK:
-
+	
         <activity
             android:name="com.interswitchng.techquest.vervepayment.VervePayment"
             android:label="" >
@@ -77,21 +77,21 @@ Using the SDK in your project
             android:name="com.interswitchng.techquest.vervepayment.PayWithExistingCardActivity"
             android:label="" >
         </activity>
-
-
+        
+        
 4. 	To initiate payment, simply create a new intent and pass VervePayment as a class reference. For example
 		Intent intent = new Intent(MainActivity.this,VervePayment.class);
 
 5. 	Supply required parameters to the intent as shown below
 
-        intent.putExtra("clientId", “Your client id”);
-	intent.putExtra("clientSecret", “Your client secret”);
-	intent.putExtra("customerId", “Customer Id”);
-	intent.putExtra("paymentCode", “Payment Item Code”);
-	intent.putExtra("amount", “Transaction amount”);
+        intent.putExtra("clientId", "Your client id");
+        intent.putExtra("clientSecret", "Your client secret");
+        intent.putExtra("customerId", "Customer Id");
+        intent.putExtra("paymentCode", "Payment Item Code");
+        intent.putExtra("amount", "Transaction amount");
         intent.putExtra("isTestPayment", true);
-
-        The meanings of the parameters are:
+        
+	The meanings of the parameters are:
 	* PhoneApplicationPage parent: This refers to the page hosting the SDK, the page where you want the SDK pop-up 	screen to show-up over.
 	* string paymentCode: This refers to the payment code for the item which you want to pay for. To get a payment 	code, go to your Developer Console and register a new item. You’ll automatically get a payment code for the 			item.
 	* long amount: This refers to the amount of money you need the user of your application to pay.
@@ -100,12 +100,11 @@ Using the SDK in your project
 	* string clientSecret: This refers to the secret key you got from Developer Console for the particular 			application that you are developing.
 	* bool isTestPayment: This is an optional parameter that is set when switching from test implementation to 		production environment. It is true by default which means that you are running in the test implementation 	        **(NB: it’s very important to set the value to false in a live distribution)**.
 
-
 6.	Call startActivityForResult method passing the intent as a parameter and a resultCode to detect when the intent		returns after execution.
 	i.e., startActivityForResult(intent, 400);
 
 7.	Implement onActivityResult method of your Activity class. This is where you will receive the return value after      	execution. Sample code is shown below:
-    
+	    
     	@Override
 		protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 			if (resultCode == RESULT_OK && requestCode == 400) {
@@ -115,5 +114,6 @@ Using the SDK in your project
  
 			}
 		}
-
+	
+	
 8.	Go ahead and implement your application as you please.
