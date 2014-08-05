@@ -43,44 +43,6 @@ Using the SDK in your project
         compile 'org.springframework.android:spring-android-auth:1.0.1.RELEASE'
         compile 'org.springframework.android:spring-android-rest-template:1.0.1.RELEASE'
 	
-	As a Maven project, add the following to pom.xml file:
-
-		<dependency>
-	        <groupId>com.google.code.gson</groupId>
-	        <artifactId>gson</artifactId>
-	        <version>2.2.4</version>
-        </dependency>
-        <dependency>
-	        <groupId>com.madgag</groupId>
-	        <artifactId>sc-light-jdk15on</artifactId>
-	        <version>1.47.0.3</version>
-        </dependency>
-        <dependency>
-	        <groupId>org.springframework.android</groupId>
-	        <artifactId>spring-android-core</artifactId>
-	        <version>1.0.1.RELEASE</version>
-        </dependency>
-        <dependency>
-	        <groupId>org.springframework.android</groupId>
-	        <artifactId>spring-android-auth</artifactId>
-	        <version>1.0.1.RELEASE</version>
-        </dependency>
-        <dependency>
-	        <groupId>org.springframework.android</groupId>
-	        <artifactId>spring-android-rest-template</artifactId>
-	        <version>1.0.1.RELEASE</version>
-        </dependency>
-
-	Or you could just download the jars files here
-
-    http://central.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
-    http://central.maven.org/maven2/com/madgag/sc-light-jdk15on/1.47.0.3/sc-light-jdk15on-1.47.0.3.jar
-    http://central.maven.org/maven2/org/springframework/android/spring-android-core/1.0.1.RELEASE/spring-android-core-1.0.1.RELEASE.jar
-    http://central.maven.org/maven2/org/springframework/android/spring-android-auth/1.0.1.RELEASE/spring-android-auth-1.0.1.RELEASE.jar
-    http://central.maven.org/maven2/org/springframework/android/spring-android-rest-template/1.0.1.RELEASE/spring-android-rest-template-1.0.1.RELEASE.jar
-
-
-
 2. 	Add the following lines of codes to your AndroidManifest.xml file to request for network access: 
 
         <uses-permission android:name="android.permission.INTERNET" />
